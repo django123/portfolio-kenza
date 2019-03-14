@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: portfolio-enzo
+  pool: 2
+  username: postgres
+  password:
+
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: afrikeat_production
+#   pool: 2
+#   username: root
+#   password: b4vDRwDk3FRYecEe
+
+production:
+  adapter: postgresql
+  host: 
+  encoding: unicode
+  database: portfolio-enzo
+  pool: 2
+  username: postgres
+  password:
+  port: 5432

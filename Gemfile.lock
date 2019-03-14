@@ -1,7 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (5.2.2.1)
+      activesupport (= 5.2.2.1)
+    activerecord (5.2.2.1)
+      activemodel (= 5.2.2.1)
+      activesupport (= 5.2.2.1)
+      arel (>= 9.0)
+    activesupport (5.2.2.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    arel (9.0.0)
     backports (3.12.0)
+    concurrent-ruby (1.1.5)
+    i18n (1.6.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.11.3)
     multi_json (1.13.1)
     mustermann (1.0.3)
     pg (1.1.4)
@@ -13,11 +29,15 @@ GEM
       rails_stdout_logging
     rails_serve_static_assets (0.0.5)
     rails_stdout_logging (0.0.5)
+    rake (12.3.2)
     sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
       rack-protection (= 2.0.5)
       tilt (~> 2.0)
+    sinatra-activerecord (2.0.13)
+      activerecord (>= 3.2)
+      sinatra (>= 1.0)
     sinatra-contrib (2.0.5)
       backports (>= 2.8.2)
       multi_json
@@ -25,15 +45,21 @@ GEM
       rack-protection (= 2.0.5)
       sinatra (= 2.0.5)
       tilt (>= 1.3, < 3)
+    thread_safe (0.3.6)
     tilt (2.0.9)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord
   pg
   rails_12factor
+  rake
   sinatra
+  sinatra-activerecord
   sinatra-contrib
 
 RUBY VERSION
