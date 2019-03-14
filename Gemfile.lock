@@ -4,9 +4,15 @@ GEM
     backports (3.12.0)
     multi_json (1.13.1)
     mustermann (1.0.3)
+    pg (1.1.4)
     rack (2.0.6)
     rack-protection (2.0.5)
       rack
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -25,6 +31,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  pg
+  rails_12factor
   sinatra
   sinatra-contrib
 
