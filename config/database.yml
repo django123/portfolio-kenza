@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: portfolio-enzo
+  database: portfolio-kenza
   pool: 2
   username: postgres
   password:
@@ -16,9 +16,9 @@ development:
 
 production:
   adapter: postgresql
-  host: 
+  host:
   encoding: unicode
-  database: portfolio-enzo
+  database: portfolio-kenza
   pool: 2
   username: postgres
   password:
